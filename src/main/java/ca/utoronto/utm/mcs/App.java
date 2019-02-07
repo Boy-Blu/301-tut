@@ -16,26 +16,6 @@ public class App
         BufferedReader in = new BufferedReader(new InputStreamReader(client.getInputStream()));
         BufferedWriter out = new BufferedWriter(new OutputStreamWriter(client.getOutputStream()));
 
-        /* TODO: Task FOR 1st MEMBER
-           Reading the lines into a list here is un-needed since they aren't used
-           anywhere else. Also this could be written much more simply with a
-           while loop avoiding the repitition of in.readline(). There's also no
-           reason to print this data to stdout so that should also be removed.
-
-           This change should be made in a branch made off of release/1.0 called
-           bugfix/RemovedUselessStorage
-        */
-
-        List<String> lst = new ArrayList<String>();
-        for (String s = in.readLine(); s != null; s = in.readLine()) {
-            if (s.isEmpty()) {
-                break;
-            }
-            lst.add(s);
-        }
-        System.out.println(lst);
-
-        
         /* TODO: TASK FOR 2nd MEMBER
            Display the current path of the web page.
            For example if the user is at localhost:8080/somepath here then the
