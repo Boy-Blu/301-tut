@@ -26,14 +26,14 @@ public class App
            bugfix/RemovedUselessStorage
         */
 
-        List<String> lst = new ArrayList<String>();
+        /**List<String> lst = new ArrayList<String>();
         for (String s = in.readLine(); s != null; s = in.readLine()) {
             if (s.isEmpty()) {
                 break;
             }
             lst.add(s);
         }
-        System.out.println(lst);
+        System.out.println(lst);**/
 
         
         /* TODO: TASK FOR 2nd MEMBER
