@@ -48,8 +48,13 @@ public class App
            This change should be made in a branch made off of release/1.0 called 
            feature/DisplayPathHeader.
         */
+
+
+
+        
+        String text = lst.get(0).split(" ")[1];
            
-        String body = "<h1>Gitflow Tutorial</h1>";
+        String body = "<h1>"+text+"</h1>";
 
         out.write("HTTP/1.1 200 OK\r\n");
         out.write(String.format("Content-Length: %d\r\n", body.length()));
